@@ -1,3 +1,6 @@
+# echo "# AI-TALENT - главный файл приложения" >> main.py
+# echo "# Этот проект ищет разработчиков на GitHub" >> main.py
+
 from fastapi import FastAPI, Query, HTTPException
 from fastapi.responses import HTMLResponse
 from typing import List, Optional
