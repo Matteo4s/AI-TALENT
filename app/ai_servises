@@ -1,0 +1,24 @@
+# from openai import OpenAI
+
+# client = OpenAI()
+
+# def analyze_skills(repo_descriptions):
+
+#     text = "\n".join(repo_descriptions)
+
+#     prompt = f"""
+#     Analyze the following repository descriptions and extract developer skills.
+
+#     {text}
+
+#     Return a list of skills.
+#     """
+
+#     response = client.chat.completions.create(
+#         model="gpt-4.1-mini",
+#         messages=[
+#             {"role": "user", "content": prompt}
+#         ]
+#     )
+
+#     return response.choices[0].message.content

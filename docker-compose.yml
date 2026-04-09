@@ -1,0 +1,19 @@
+# version: "3.9"
+name: ai-talent
+
+services:
+  postgres:
+    image: postgres:16
+    container_name: ai_talent_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: talent_ai
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
